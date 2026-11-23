@@ -31,8 +31,8 @@ export const heroBadges = [
   ["clock", "Quick Response"],
 ];
 export const heroStats = [
-  ["500+", "Projects Completed"],
-  ["10+", "Years Experience"],
+  ["30+", "Projects Completed"],
+  ["11+", "Years Experience"],
   ["5", "Core Services"],
-  ["24/7", "WhatsApp Support"],
+  ["24", "WhatsApp Support"],
 ];

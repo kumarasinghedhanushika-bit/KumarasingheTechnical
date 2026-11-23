@@ -8,11 +8,14 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import GalleryPage from "./pages/GalleryPage";
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
   useEffect(() => { if (!hash) window.scrollTo(0, 0); }, [pathname, hash]);
   return null;
 }
+
 export default function App() {
   const { pathname } = useLocation();
   return (
@@ -24,6 +27,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<div className="container-x py-24 text-center"><h1 className="text-3xl font-bold">Page not found</h1><Link to="/" className="btn btn-primary mt-6">Back to home</Link></div>} />
