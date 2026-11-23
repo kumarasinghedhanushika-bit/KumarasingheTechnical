@@ -22,6 +22,7 @@ export default function Footer() {
           <p className="flex gap-2"><Phone size={16} /> {SITE.phoneDisplay}</p>
           <p className="flex gap-2"><Mail size={16} /> {SITE.email}</p>
           <p className="flex gap-2"><MapPin size={16} className="shrink-0" /> {SITE.address}</p>
+          <Link to="/contact" className="inline-block pt-2 font-semibold text-white hover:underline">Contact page &rarr;</Link>
         </div>
       </div>
       <p className="border-t border-white/10 py-4 text-center text-xs">© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
