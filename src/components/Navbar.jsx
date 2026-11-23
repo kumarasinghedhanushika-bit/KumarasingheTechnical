@@ -71,6 +71,7 @@ export default function Navbar() {
           <NavLink to="/projects" className={cls} onClick={close}>Projects</NavLink>
           <NavLink to="/gallery" className={cls} onClick={close}>Gallery</NavLink>
           <NavLink to="/about" className={cls} onClick={close}>About</NavLink>
+          <NavLink to="/contact" className={cls} onClick={close}>Contact Us</NavLink>
           <a href={tel} className="btn btn-light mt-3"><Phone size={16} /> Call Us</a>
           <QuoteButton className="btn btn-primary mt-2" />
         </nav>
