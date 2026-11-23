@@ -49,6 +49,7 @@ export default function Navbar() {
           <NavLink to="/projects" className={cls}>Projects</NavLink>
           <NavLink to="/gallery" className={cls}>Gallery</NavLink>
           <NavLink to="/about" className={cls}>About</NavLink>
+           <NavLink to="/contact" className={cls} >Contact Us</NavLink>
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
