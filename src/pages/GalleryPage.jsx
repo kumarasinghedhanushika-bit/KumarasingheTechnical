@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import usePageTitle from "../utils/usePageTitle";
 import Gallery from "../components/Gallery";
 import QuoteButton from "../components/QuoteButton";
 import { gallery } from "../data/gallery";
+import SEO from "../components/SEO";
 
 export default function GalleryPage() {
-  usePageTitle("Gallery");
+
   return (
     <>
+    <SEO title="Gallery" path="/gallery" description="Photo gallery of CCTV, networking, solar and electrical jobs completed by Kumarasinghe Technical." />
       <div className="bg-navy-900 py-14 text-white">
         <div className="container-x">
           <h1 className="text-4xl font-extrabold !text-white">Our work gallery</h1>

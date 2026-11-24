@@ -2,6 +2,7 @@
 // *** EDIT HERE: company details used across the whole website ***
 export const SITE = {
   name: "Kumarasinghe Technical",
+  url: "https://kumarasighe-technical.krishanidhanushika.com", 
   tagline: "IT, Security, Solar & Electrical Solutions",
   whatsappNumber: "94771544166",
   phoneDisplay: "+94 77 154 4166",

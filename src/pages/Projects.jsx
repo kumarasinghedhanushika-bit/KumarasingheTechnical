@@ -1,15 +1,16 @@
 import { useState } from "react";
-import usePageTitle from "../utils/usePageTitle";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { services } from "../data/services";
+import SEO from "../components/SEO";
 export default function Projects() {
-  usePageTitle("Projects");
+
   const [cat, setCat] = useState("all");
   const list = cat === "all" ? projects : projects.filter((p) => p.category === cat);
   const tabs = [{ id: "all", waName: "All" }, ...services];
   return (
     <>
+    <SEO title="Projects" path="/projects" description="Projects completed by Kumarasinghe Technical: CCTV, networking, solar and electrical work." />
       <div className="bg-navy-900 py-14 text-white"><div className="container-x"><h1 className="text-4xl font-extrabold !text-white">Our projects</h1><p className="mt-2 text-slate-300">Sample projects shown as demo content.</p></div></div>
       <section className="section"><div className="container-x">
         <div className="flex flex-wrap gap-2">

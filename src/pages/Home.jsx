@@ -12,11 +12,26 @@ import { services } from "../data/services";
 import { projects } from "../data/projects";
 import { gallery } from "../data/gallery";
 import { whyChoose, process } from "../data/content";
+import SEO from "../components/SEO";
+import { SITE } from "../config/site";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: SITE.name,
+  url: SITE.url,
+  image: `${SITE.url}/logo.png`,
+  telephone: SITE.phoneDisplay,
+  email: SITE.email,
+  address: { "@type": "PostalAddress", streetAddress: SITE.address, addressCountry: "LK" },
+  areaServed: "Sri Lanka",
+};
 
 export default function Home() {
   usePageTitle();
   return (
     <>
+    <SEO path="/" schema={schema} />
       <HeroSection />
 
       <section className="section">
